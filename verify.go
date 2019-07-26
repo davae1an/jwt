@@ -11,6 +11,27 @@ var ErrAlgValidation = errors.New(`"alg" field mismatch`)
 // VerifyOption is a functional option for verifying.
 type VerifyOption func(*RawToken) error
 
+// Parse parses a byte slice representing a JWT and returns a raw JWT,
+// which can be verified and decoded into a struct that implements Token.
+func Parse(token []byte, alg Algorithm) (RawToken, error) {
+	rt := &RawToken{
+		alg: alg,
+	}
+
+	sep1 := bytes.IndexByte(token, '.')
+	if sep1 < 0 {
+		return *rt, ErrMalformed
+	}
+
+	cbytes := token[sep1+1:]
+	sep2 := bytes.IndexByte(cbytes, '.')
+	if sep2 < 0 {
+		return *rt, ErrMalformed
+	}
+	rt.setToken(token, sep1, sep2)
+	return *rt, nil
+}
+
 // Verify verifies a token's signature using alg. Before verification, opts is iterated and
 // each option in it is run.
 func Verify(token []byte, alg Algorithm, payload interface{}, opts ...VerifyOption) (Header, error) {
