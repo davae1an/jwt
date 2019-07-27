@@ -3,7 +3,7 @@ package jwtutil
 import (
 	"errors"
 
-	"github.com/gbrlsnchs/jwt/v3"
+	"github.com/davae1an/jwt/v3"
 )
 
 // Resolver is an Algorithm resolver.

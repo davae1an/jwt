@@ -39,7 +39,7 @@ Full documentation [here](https://godoc.org/github.com/gbrlsnchs/jwt).
 <p>
 
 ```sh
-$ go get -u github.com/gbrlsnchs/jwt/v3
+$ go get -u github.com/davae1an/jwt/v3
 ```
 
 </p>
@@ -49,7 +49,7 @@ $ go get -u github.com/gbrlsnchs/jwt/v3
 <p>
 
 ```sh
-$ GO111MODULE=on go get -u github.com/gbrlsnchs/jwt/v3
+$ GO111MODULE=on go get -u github.com/davae1an/jwt/v3
 ```
 
 </p>
@@ -59,7 +59,7 @@ $ GO111MODULE=on go get -u github.com/gbrlsnchs/jwt/v3
 <p>
 
 ```sh
-$ vgo get -u github.com/gbrlsnchs/jwt/v3
+$ vgo get -u github.com/davae1an/jwt/v3
 ```
 
 </p>
@@ -69,7 +69,7 @@ $ vgo get -u github.com/gbrlsnchs/jwt/v3
 <p>
 
 ```sh
-$ go get -u github.com/gbrlsnchs/jwt/v3
+$ go get -u github.com/davae1an/jwt/v3
 ```
 
 #### Important
@@ -83,7 +83,7 @@ Your project must be inside the `GOPATH`.
 import (
 	"time"
 
-	"github.com/gbrlsnchs/jwt/v3"
+	"github.com/davae1an/jwt/v3"
 )
 
 type CustomPayload struct {
@@ -121,7 +121,7 @@ func main() {
 
 ### Verifying
 ```go
-import "github.com/gbrlsnchs/jwt/v3"
+import "github.com/davae1an/jwt/v3"
 
 type CustomPayload struct {
 	jwt.Payload
@@ -153,7 +153,7 @@ The "cty" and "kid" claims can be set by passing options to the `jwt.Sign` funct
 import (
 	"time"
 
-	"github.com/gbrlsnchs/jwt/v3"
+	"github.com/davae1an/jwt/v3"
 )
 
 var hs = jwt.NewHS256([]byte("secret"))
@@ -185,7 +185,7 @@ func main() {
 import (
 	"time"
 
-	"github.com/gbrlsnchs/jwt/v3"
+	"github.com/davae1an/jwt/v3"
 )
 
 type CustomPayload struct {
@@ -231,7 +231,7 @@ func main() {
 
 For validating the "alg" field in a JOSE header **before** verification, the `jwt.ValidateHeader` option must be passed to `jwt.Verify`.
 ```go
-import "github.com/gbrlsnchs/jwt/v3"
+import "github.com/davae1an/jwt/v3"
 
 var hs = jwt.NewHS256([]byte("secret"))
 
@@ -257,8 +257,8 @@ func main() {
 import (
 	"errors"
 
-	"github.com/gbrlsnchs/jwt/v3"
-	"github.com/gbrlsnchs/jwt/v3/jwtutil"
+	"github.com/davae1an/jwt/v3"
+	"github.com/davae1an/jwt/v3/jwtutil"
 )
 
 var (

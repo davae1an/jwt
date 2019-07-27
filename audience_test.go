@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/gbrlsnchs/jwt/v3"
+	"github.com/davae1an/jwt/v3"
 )
 
 func TestAudienceMarshal(t *testing.T) {

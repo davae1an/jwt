@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gbrlsnchs/jwt/v3"
-	"github.com/gbrlsnchs/jwt/v3/internal"
+	"github.com/davae1an/jwt/v3"
+	"github.com/davae1an/jwt/v3/internal"
 )
 
 func TestTimeMarshalJSON(t *testing.T) {

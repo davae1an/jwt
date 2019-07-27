@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/gbrlsnchs/jwt/v3/internal"
+	"github.com/davae1an/jwt/v3/internal"
 )
 
 // Time is the allowed format for time, as per the RFC 7519.

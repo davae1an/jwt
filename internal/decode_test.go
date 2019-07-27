@@ -4,7 +4,7 @@ import (
 	"encoding/base64"
 	"testing"
 
-	"github.com/gbrlsnchs/jwt/v3/internal"
+	"github.com/davae1an/jwt/v3/internal"
 )
 
 var (

@@ -3,7 +3,7 @@ package jwt
 import (
 	"errors"
 
-	"github.com/gbrlsnchs/jwt/v3/internal"
+	"github.com/davae1an/jwt/v3/internal"
 )
 
 // ErrMalformed indicates a token doesn't have a valid format, as per the RFC 7519.

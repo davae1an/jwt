@@ -1,6 +1,6 @@
 package jwt_test
 
-import "github.com/gbrlsnchs/jwt/v3/internal"
+import "github.com/davae1an/jwt/v3/internal"
 
 var (
 	ed25519PrivateKey1, ed25519PublicKey1 = internal.GenerateEd25519Keys()

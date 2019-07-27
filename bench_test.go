@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gbrlsnchs/jwt/v3"
+	"github.com/davae1an/jwt/v3"
 )
 
 var (

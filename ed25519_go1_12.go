@@ -5,7 +5,7 @@ package jwt
 import (
 	"errors"
 
-	"github.com/gbrlsnchs/jwt/v3/internal"
+	"github.com/davae1an/jwt/v3/internal"
 	"golang.org/x/crypto/ed25519"
 )
 

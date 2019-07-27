@@ -4,8 +4,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/gbrlsnchs/jwt/v3"
-	"github.com/gbrlsnchs/jwt/v3/jwtutil"
+	"github.com/davae1an/jwt/v3"
+	"github.com/davae1an/jwt/v3/jwtutil"
 )
 
 var hs256 = jwt.NewHS256([]byte("resolver"))
